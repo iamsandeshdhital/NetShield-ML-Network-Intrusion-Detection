@@ -1,0 +1,511 @@
+{
+  "raw_train_records": 125973,
+  "raw_test_records": 22544,
+  "raw_columns": 43,
+  "clean_train_records": 125973,
+  "clean_test_records": 22544,
+  "train_attack_share": 0.4654,
+  "test_attack_share": 0.5692,
+  "train_rows": 100778,
+  "holdout_rows": 25195,
+  "encoded_features": 121,
+  "dropped_constant": 1,
+  "dropped_correlated": 7,
+  "selected_features": 40,
+  "constant_feature_names": [
+    "num_outbound_cmds"
+  ],
+  "correlated_feature_names": [
+    "num_root",
+    "srv_serror_rate",
+    "srv_rerror_rate",
+    "dst_host_serror_rate",
+    "dst_host_srv_serror_rate",
+    "dst_host_srv_rerror_rate",
+    "flag_S0"
+  ],
+  "oob_score": 0.9982,
+  "top_features": [
+    {
+      "feature": "src_bytes",
+      "importance": 0.168109
+    },
+    {
+      "feature": "dst_bytes",
+      "importance": 0.123305
+    },
+    {
+      "feature": "flag_SF",
+      "importance": 0.099725
+    },
+    {
+      "feature": "same_srv_rate",
+      "importance": 0.086186
+    },
+    {
+      "feature": "dst_host_srv_count",
+      "importance": 0.067194
+    },
+    {
+      "feature": "dst_host_same_srv_rate",
+      "importance": 0.048175
+    },
+    {
+      "feature": "count",
+      "importance": 0.045209
+    },
+    {
+      "feature": "dst_host_diff_srv_rate",
+      "importance": 0.042407
+    },
+    {
+      "feature": "diff_srv_rate",
+      "importance": 0.036955
+    },
+    {
+      "feature": "logged_in",
+      "importance": 0.034816
+    }
+  ],
+  "figures": [
+    "01_class_distribution.png",
+    "02_model_comparison_holdout.png",
+    "03_model_comparison_official.png",
+    "04_mutual_information_top15.png",
+    "05_feature_importance_top10.png",
+    "06_confusion_holdout.png",
+    "07_confusion_official.png",
+    "08_roc_holdout.png",
+    "09_roc_official.png",
+    "10_category_detection_official.png"
+  ],
+  "metrics": [
+    {
+      "Model": "Logistic Regression",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Accuracy": 0.9674,
+      "Precision": 0.9707,
+      "Recall": 0.9589,
+      "F1": 0.9648,
+      "ROC-AUC": 0.9949,
+      "TN": 13130,
+      "FP": 339,
+      "FN": 482,
+      "TP": 11244,
+      "False Alarm Rate": 0.0252,
+      "Miss Rate": 0.0411,
+      "Train (s)": 1.15,
+      "Predict (s)": 0.011
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Official KDDTest+ split",
+      "Accuracy": 0.772,
+      "Precision": 0.9179,
+      "Recall": 0.6584,
+      "F1": 0.7668,
+      "ROC-AUC": 0.8881,
+      "TN": 8955,
+      "FP": 756,
+      "FN": 4384,
+      "TP": 8449,
+      "False Alarm Rate": 0.0778,
+      "Miss Rate": 0.3416,
+      "Train (s)": 1.15,
+      "Predict (s)": 0.009
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Accuracy": 0.9976,
+      "Precision": 0.9964,
+      "Recall": 0.9984,
+      "F1": 0.9974,
+      "ROC-AUC": 0.9988,
+      "TN": 13427,
+      "FP": 42,
+      "FN": 19,
+      "TP": 11707,
+      "False Alarm Rate": 0.0031,
+      "Miss Rate": 0.0016,
+      "Train (s)": 1.25,
+      "Predict (s)": 0.018
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Official KDDTest+ split",
+      "Accuracy": 0.8099,
+      "Precision": 0.9588,
+      "Recall": 0.696,
+      "F1": 0.8065,
+      "ROC-AUC": 0.8449,
+      "TN": 9327,
+      "FP": 384,
+      "FN": 3901,
+      "TP": 8932,
+      "False Alarm Rate": 0.0395,
+      "Miss Rate": 0.304,
+      "Train (s)": 1.25,
+      "Predict (s)": 0.016
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Accuracy": 0.9987,
+      "Precision": 0.9993,
+      "Recall": 0.9979,
+      "F1": 0.9986,
+      "ROC-AUC": 1.0,
+      "TN": 13461,
+      "FP": 8,
+      "FN": 25,
+      "TP": 11701,
+      "False Alarm Rate": 0.0006,
+      "Miss Rate": 0.0021,
+      "Train (s)": 11.24,
+      "Predict (s)": 0.479
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Official KDDTest+ split",
+      "Accuracy": 0.7728,
+      "Precision": 0.9685,
+      "Recall": 0.6211,
+      "F1": 0.7569,
+      "ROC-AUC": 0.9647,
+      "TN": 9452,
+      "FP": 259,
+      "FN": 4862,
+      "TP": 7971,
+      "False Alarm Rate": 0.0267,
+      "Miss Rate": 0.3789,
+      "Train (s)": 11.24,
+      "Predict (s)": 0.581
+    }
+  ],
+  "cross_validation": [
+    {
+      "Model": "Logistic Regression",
+      "CV folds": 5,
+      "CV F1 mean": 0.9656,
+      "CV F1 std": 0.0009
+    },
+    {
+      "Model": "Decision Tree",
+      "CV folds": 5,
+      "CV F1 mean": 0.9969,
+      "CV F1 std": 0.0005
+    },
+    {
+      "Model": "Random Forest",
+      "CV folds": 5,
+      "CV F1 mean": 0.9979,
+      "CV F1 std": 0.0003
+    }
+  ],
+  "per_category": [
+    {
+      "Model": "Logistic Regression",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "Normal (correctly allowed)",
+      "Records": 13469,
+      "Detected": 13130,
+      "Detection Rate": 0.9748
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "DoS",
+      "Records": 9105,
+      "Detected": 8902,
+      "Detection Rate": 0.9777
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "Probe",
+      "Records": 2389,
+      "Detected": 2252,
+      "Detection Rate": 0.9427
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "R2L",
+      "Records": 226,
+      "Detected": 88,
+      "Detection Rate": 0.3894
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "U2R",
+      "Records": 6,
+      "Detected": 2,
+      "Detection Rate": 0.3333
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Official KDDTest+ split",
+      "Category": "Normal (correctly allowed)",
+      "Records": 9711,
+      "Detected": 8955,
+      "Detection Rate": 0.9222
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Official KDDTest+ split",
+      "Category": "DoS",
+      "Records": 7458,
+      "Detected": 6318,
+      "Detection Rate": 0.8471
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Official KDDTest+ split",
+      "Category": "R2L",
+      "Records": 2754,
+      "Detected": 263,
+      "Detection Rate": 0.0955
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Official KDDTest+ split",
+      "Category": "Probe",
+      "Records": 2421,
+      "Detected": 1861,
+      "Detection Rate": 0.7687
+    },
+    {
+      "Model": "Logistic Regression",
+      "Split": "Official KDDTest+ split",
+      "Category": "U2R",
+      "Records": 200,
+      "Detected": 7,
+      "Detection Rate": 0.035
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "Normal (correctly allowed)",
+      "Records": 13469,
+      "Detected": 13427,
+      "Detection Rate": 0.9969
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "DoS",
+      "Records": 9105,
+      "Detected": 9105,
+      "Detection Rate": 1.0
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "Probe",
+      "Records": 2389,
+      "Detected": 2380,
+      "Detection Rate": 0.9962
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "R2L",
+      "Records": 226,
+      "Detected": 216,
+      "Detection Rate": 0.9558
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "U2R",
+      "Records": 6,
+      "Detected": 6,
+      "Detection Rate": 1.0
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Official KDDTest+ split",
+      "Category": "Normal (correctly allowed)",
+      "Records": 9711,
+      "Detected": 9327,
+      "Detection Rate": 0.9605
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Official KDDTest+ split",
+      "Category": "DoS",
+      "Records": 7458,
+      "Detected": 6627,
+      "Detection Rate": 0.8886
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Official KDDTest+ split",
+      "Category": "R2L",
+      "Records": 2754,
+      "Detected": 789,
+      "Detection Rate": 0.2865
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Official KDDTest+ split",
+      "Category": "Probe",
+      "Records": 2421,
+      "Detected": 1498,
+      "Detection Rate": 0.6188
+    },
+    {
+      "Model": "Decision Tree",
+      "Split": "Official KDDTest+ split",
+      "Category": "U2R",
+      "Records": 200,
+      "Detected": 18,
+      "Detection Rate": 0.09
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "Normal (correctly allowed)",
+      "Records": 13469,
+      "Detected": 13461,
+      "Detection Rate": 0.9994
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "DoS",
+      "Records": 9105,
+      "Detected": 9103,
+      "Detection Rate": 0.9998
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "Probe",
+      "Records": 2389,
+      "Detected": 2379,
+      "Detection Rate": 0.9958
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "R2L",
+      "Records": 226,
+      "Detected": 214,
+      "Detection Rate": 0.9469
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Held-out split (KDDTrain+ 20%)",
+      "Category": "U2R",
+      "Records": 6,
+      "Detected": 5,
+      "Detection Rate": 0.8333
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Official KDDTest+ split",
+      "Category": "Normal (correctly allowed)",
+      "Records": 9711,
+      "Detected": 9452,
+      "Detection Rate": 0.9733
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Official KDDTest+ split",
+      "Category": "DoS",
+      "Records": 7458,
+      "Detected": 5970,
+      "Detection Rate": 0.8005
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Official KDDTest+ split",
+      "Category": "R2L",
+      "Records": 2754,
+      "Detected": 140,
+      "Detection Rate": 0.0508
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Official KDDTest+ split",
+      "Category": "Probe",
+      "Records": 2421,
+      "Detected": 1841,
+      "Detection Rate": 0.7604
+    },
+    {
+      "Model": "Random Forest",
+      "Split": "Official KDDTest+ split",
+      "Category": "U2R",
+      "Records": 200,
+      "Detected": 20,
+      "Detection Rate": 0.1
+    }
+  ],
+  "mutual_information_top15": [
+    {
+      "feature": "src_bytes",
+      "mi": 0.55799
+    },
+    {
+      "feature": "dst_bytes",
+      "mi": 0.436689
+    },
+    {
+      "feature": "diff_srv_rate",
+      "mi": 0.358592
+    },
+    {
+      "feature": "same_srv_rate",
+      "mi": 0.348854
+    },
+    {
+      "feature": "dst_host_srv_count",
+      "mi": 0.330916
+    },
+    {
+      "feature": "flag_SF",
+      "mi": 0.326456
+    },
+    {
+      "feature": "dst_host_same_srv_rate",
+      "mi": 0.303055
+    },
+    {
+      "feature": "dst_host_diff_srv_rate",
+      "mi": 0.286691
+    },
+    {
+      "feature": "logged_in",
+      "mi": 0.278543
+    },
+    {
+      "feature": "serror_rate",
+      "mi": 0.271835
+    },
+    {
+      "feature": "count",
+      "mi": 0.268282
+    },
+    {
+      "feature": "service_http",
+      "mi": 0.18984
+    },
+    {
+      "feature": "dst_host_srv_diff_host_rate",
+      "mi": 0.187645
+    },
+    {
+      "feature": "dst_host_count",
+      "mi": 0.137234
+    },
+    {
+      "feature": "dst_host_same_src_port_rate",
+      "mi": 0.129505
+    }
+  ],
+  "runtime_seconds": 109.4
+}

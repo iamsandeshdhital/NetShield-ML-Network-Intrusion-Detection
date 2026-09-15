@@ -1,0 +1,7 @@
+Model,Split,Accuracy,Precision,Recall,F1,ROC-AUC,TN,FP,FN,TP,False Alarm Rate,Miss Rate,Train (s),Predict (s)
+Logistic Regression,Held-out split (KDDTrain+ 20%),0.9674,0.9707,0.9589,0.9648,0.9949,13130,339,482,11244,0.0252,0.0411,1.15,0.011
+Logistic Regression,Official KDDTest+ split,0.772,0.9179,0.6584,0.7668,0.8881,8955,756,4384,8449,0.0778,0.3416,1.15,0.009
+Decision Tree,Held-out split (KDDTrain+ 20%),0.9976,0.9964,0.9984,0.9974,0.9988,13427,42,19,11707,0.0031,0.0016,1.25,0.018
+Decision Tree,Official KDDTest+ split,0.8099,0.9588,0.696,0.8065,0.8449,9327,384,3901,8932,0.0395,0.304,1.25,0.016
+Random Forest,Held-out split (KDDTrain+ 20%),0.9987,0.9993,0.9979,0.9986,1.0,13461,8,25,11701,0.0006,0.0021,11.24,0.479
+Random Forest,Official KDDTest+ split,0.7728,0.9685,0.6211,0.7569,0.9647,9452,259,4862,7971,0.0267,0.3789,11.24,0.581

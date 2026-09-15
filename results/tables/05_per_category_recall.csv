@@ -1,0 +1,31 @@
+Model,Split,Category,Records,Detected,Detection Rate
+Logistic Regression,Held-out split (KDDTrain+ 20%),Normal (correctly allowed),13469,13130,0.9748
+Logistic Regression,Held-out split (KDDTrain+ 20%),DoS,9105,8902,0.9777
+Logistic Regression,Held-out split (KDDTrain+ 20%),Probe,2389,2252,0.9427
+Logistic Regression,Held-out split (KDDTrain+ 20%),R2L,226,88,0.3894
+Logistic Regression,Held-out split (KDDTrain+ 20%),U2R,6,2,0.3333
+Logistic Regression,Official KDDTest+ split,Normal (correctly allowed),9711,8955,0.9222
+Logistic Regression,Official KDDTest+ split,DoS,7458,6318,0.8471
+Logistic Regression,Official KDDTest+ split,R2L,2754,263,0.0955
+Logistic Regression,Official KDDTest+ split,Probe,2421,1861,0.7687
+Logistic Regression,Official KDDTest+ split,U2R,200,7,0.035
+Decision Tree,Held-out split (KDDTrain+ 20%),Normal (correctly allowed),13469,13427,0.9969
+Decision Tree,Held-out split (KDDTrain+ 20%),DoS,9105,9105,1.0
+Decision Tree,Held-out split (KDDTrain+ 20%),Probe,2389,2380,0.9962
+Decision Tree,Held-out split (KDDTrain+ 20%),R2L,226,216,0.9558
+Decision Tree,Held-out split (KDDTrain+ 20%),U2R,6,6,1.0
+Decision Tree,Official KDDTest+ split,Normal (correctly allowed),9711,9327,0.9605
+Decision Tree,Official KDDTest+ split,DoS,7458,6627,0.8886
+Decision Tree,Official KDDTest+ split,R2L,2754,789,0.2865
+Decision Tree,Official KDDTest+ split,Probe,2421,1498,0.6188
+Decision Tree,Official KDDTest+ split,U2R,200,18,0.09
+Random Forest,Held-out split (KDDTrain+ 20%),Normal (correctly allowed),13469,13461,0.9994
+Random Forest,Held-out split (KDDTrain+ 20%),DoS,9105,9103,0.9998
+Random Forest,Held-out split (KDDTrain+ 20%),Probe,2389,2379,0.9958
+Random Forest,Held-out split (KDDTrain+ 20%),R2L,226,214,0.9469
+Random Forest,Held-out split (KDDTrain+ 20%),U2R,6,5,0.8333
+Random Forest,Official KDDTest+ split,Normal (correctly allowed),9711,9452,0.9733
+Random Forest,Official KDDTest+ split,DoS,7458,5970,0.8005
+Random Forest,Official KDDTest+ split,R2L,2754,140,0.0508
+Random Forest,Official KDDTest+ split,Probe,2421,1841,0.7604
+Random Forest,Official KDDTest+ split,U2R,200,20,0.1

@@ -1,0 +1,71 @@
+Logistic Regression - Held-out split (KDDTrain+ 20%)
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+      Normal     0.9646    0.9748    0.9697     13469
+      Attack     0.9707    0.9589    0.9648     11726
+
+    accuracy                         0.9674     25195
+   macro avg     0.9677    0.9669    0.9672     25195
+weighted avg     0.9674    0.9674    0.9674     25195
+
+
+Logistic Regression - Official KDDTest+ split
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+      Normal     0.6713    0.9222    0.7770      9711
+      Attack     0.9179    0.6584    0.7668     12833
+
+    accuracy                         0.7720     22544
+   macro avg     0.7946    0.7903    0.7719     22544
+weighted avg     0.8117    0.7720    0.7712     22544
+
+
+Decision Tree - Held-out split (KDDTrain+ 20%)
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+      Normal     0.9986    0.9969    0.9977     13469
+      Attack     0.9964    0.9984    0.9974     11726
+
+    accuracy                         0.9976     25195
+   macro avg     0.9975    0.9976    0.9976     25195
+weighted avg     0.9976    0.9976    0.9976     25195
+
+
+Decision Tree - Official KDDTest+ split
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+      Normal     0.7051    0.9605    0.8132      9711
+      Attack     0.9588    0.6960    0.8065     12833
+
+    accuracy                         0.8099     22544
+   macro avg     0.8319    0.8282    0.8099     22544
+weighted avg     0.8495    0.8099    0.8094     22544
+
+
+Random Forest - Held-out split (KDDTrain+ 20%)
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+      Normal     0.9981    0.9994    0.9988     13469
+      Attack     0.9993    0.9979    0.9986     11726
+
+    accuracy                         0.9987     25195
+   macro avg     0.9987    0.9986    0.9987     25195
+weighted avg     0.9987    0.9987    0.9987     25195
+
+
+Random Forest - Official KDDTest+ split
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+      Normal     0.6603    0.9733    0.7868      9711
+      Attack     0.9685    0.6211    0.7569     12833
+
+    accuracy                         0.7728     22544
+   macro avg     0.8144    0.7972    0.7719     22544
+weighted avg     0.8358    0.7728    0.7698     22544
+

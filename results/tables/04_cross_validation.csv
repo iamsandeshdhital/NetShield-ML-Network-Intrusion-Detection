@@ -1,0 +1,4 @@
+Model,CV folds,CV F1 mean,CV F1 std
+Logistic Regression,5,0.9656,0.0009
+Decision Tree,5,0.9969,0.0005
+Random Forest,5,0.9979,0.0003

@@ -1,0 +1,11 @@
+split,category,records,share_pct
+KDDTrain+,Normal,67343,53.46
+KDDTrain+,DoS,45927,36.46
+KDDTrain+,Probe,11656,9.25
+KDDTrain+,R2L,995,0.79
+KDDTrain+,U2R,52,0.04
+KDDTest+,Normal,9711,43.08
+KDDTest+,DoS,7458,33.08
+KDDTest+,R2L,2754,12.22
+KDDTest+,Probe,2421,10.74
+KDDTest+,U2R,200,0.89
